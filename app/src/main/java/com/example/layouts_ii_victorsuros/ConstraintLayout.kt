@@ -17,7 +17,15 @@ class ConstraintLayout : AppCompatActivity() {
         botSiguiente.setOnClickListener {
 
             setContentView(R.layout.constraint_layout_ii)
+            botVolver = findViewById(R.id.botonVolver)
+            botVolver.setOnClickListener {
+
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+
+            }
         }
+
     }
 
 }
